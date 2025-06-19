@@ -1,7 +1,6 @@
 import { Component, OnInit, } from '@angular/core';
 import{trigger,style,transition,animate,keyframes,query,stagger} from '@angular/animations';
 import { DataService } from '../data.service';
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -39,6 +38,7 @@ export class HomeComponent implements OnInit {
   goals:string[]=[];
 
 
+
   constructor(private _data:DataService) { }
 
   ngOnInit(): void {
@@ -48,10 +48,12 @@ export class HomeComponent implements OnInit {
     this._data.changeGoal(this.goals);
   }
   addItem(){
+   
     this.goals.push(this.goalText);
     this.goalText='';
     this.itemCount = this.goals.length;
     this._data.changeGoal(this.goals);
+    
 
   }
 

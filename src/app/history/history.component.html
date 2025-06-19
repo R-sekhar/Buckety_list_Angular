@@ -1,0 +1,26 @@
+<br>
+<br>
+
+<h1>History</h1>
+<br>
+<div class= "table-content">
+  
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>BucketList Items</th>
+            </tr>
+           
+                <tr  *ngFor="let goal of goals;let i=index">
+                    <td>{{ currenntDate | date: 'medium'}}</td>
+                  
+                    <td>{{goal}}</td>
+                </tr>
+        </table>    
+
+       
+</div>
+
+
+
+

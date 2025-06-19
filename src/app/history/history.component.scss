@@ -1,0 +1,32 @@
+
+.table-content{
+    background-color: rgba(83, 121, 197, 0.918);
+    display: grid;
+    padding:.1em;
+    font-weight:bold;   
+}
+
+
+table{
+    width:100;
+    border-collapse:collapse;
+}
+.tr{
+    background-color: rgb(132, 162, 190);
+}
+
+th,td{
+    border:.5px solid white;
+    padding:8px;
+    text-align:left;
+    
+}
+th{
+    font-weight:bold;
+    font-size:15px;
+    border-bottom:1px solid white;
+}
+
+ 
+
+

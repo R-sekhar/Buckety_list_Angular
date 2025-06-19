@@ -1,0 +1,9 @@
+p{
+    background-color: rgb(83, 103, 190);
+    display: inline-block;
+}
+li{
+    grid-template-columns: 50,auto;
+    background-color: rgb(255, 127, 219);
+    display: inline-block;
+}
